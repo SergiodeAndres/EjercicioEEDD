@@ -18,6 +18,7 @@ public:
 	DicTreeElem* getLeftchild();
 	void setRightsibling(DicTreeElem* p_right); 
 	DicTreeElem* getRightsibling();
+	
 	bool hasChild(char c); 
 	void insertChild(char c, bool last); 
 	DicTreeElem* getChild(char c); 

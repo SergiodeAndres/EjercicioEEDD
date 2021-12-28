@@ -1,6 +1,7 @@
 #ifndef DICTREEDATA_HPP
 #define DICTREEDATA_HPP
 #include <string>
+#include <locale.h>
 using namespace std; 
 
 class DicTreeData
