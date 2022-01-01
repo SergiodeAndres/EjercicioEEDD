@@ -1,30 +1,28 @@
-#include <iostream>
-#include "DicTree.hpp"
-#include <fstream>
-#include <chrono>
+#include "Core.hpp"
 int main(int argc, char **argv)
 {
-    DicTree* t = new DicTree();
-	ifstream inFile;
+	Core c = Core(); 
+	c.menu(c.GetTree()); 
+    return 0;
+	/*DicTree* t = new DicTree();
+	string file_name;
+    cout << "Introduce the file name of the dictionary:" << endl;
+    cin >> file_name; 
+    ifstream file;
+    file.open(""+file_name+".txt");
 	string word; 
-	inFile.open("diccionario.txt"); 
-	auto start = std::chrono::steady_clock::now();
-	while(!inFile.eof()) 
+	while(!file.eof()) 
         {
-			inFile >> word;
+			file >> word;
 			t->insert(word);
         }
-	 inFile.close();
-	auto stop = std::chrono::steady_clock::now();
-	auto diff = stop - start;
-	cout << "Time to insert all words:" << chrono::duration <double, milli> (diff).count() << " milliseconds" << endl;
-	if (t->isInTree("cthu"))
+	 file.close();
+	 if (t->isInTree("berb"))
 	{
-		cout << "found";
+	cout << "Found";
 	}
 	else 
 	{
-		cout << "not found"; 
-	}
-    return 0;
+		cout << "Not Found"; 
+	}*/
 }

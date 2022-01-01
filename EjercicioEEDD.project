@@ -93,6 +93,20 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="List.cpp"/>
+    <File Name="List.hpp"/>
+    <File Name="ListElement.cpp"/>
+    <File Name="ListElement.hpp"/>
+    <File Name="ListElementData.cpp"/>
+    <File Name="ListElementData.hpp"/>
+    <File Name="Queue.cpp"/>
+    <File Name="Queue.hpp"/>
+    <File Name="QueueElement.cpp"/>
+    <File Name="QueueElement.hpp"/>
+    <File Name="QueueElementData.cpp"/>
+    <File Name="QueueElementData.hpp"/>
+    <File Name="Core.cpp"/>
+    <File Name="Core.hpp"/>
     <File Name="DicTree.cpp"/>
     <File Name="DicTree.hpp"/>
     <File Name="DicTreeElem.cpp"/>

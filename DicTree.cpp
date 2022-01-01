@@ -177,6 +177,10 @@ bool DicTree::isInTree(string s, DicTreeElem* node, bool* found)
 			{
 				*found = true; 
 			}
+			if (s.length() == 1 && node->hasChild(s[0]) && node->getChild(s[0])->getData()->getLast() == false)
+			{
+				*found = false; 
+			}
 		}
 	}
 	return *found; 
